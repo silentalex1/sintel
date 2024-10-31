@@ -114,6 +114,8 @@
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
         }
 
         .primary-btn {
@@ -216,7 +218,7 @@
                 <p class="description">Since 2024, Sintel has been crafted by a single-handed member, with smooth exploit available now.</p>
                 <div class="cta-buttons">
                     <button class="button primary-btn">Get Started</button>
-                    <button class="button secondary-btn">Join Discord</button>
+                    <a href="#" class="button secondary-btn" id="discord-invite">Join Discord</a>
                 </div>
             </div>
         </section>
@@ -238,5 +240,12 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('discord-invite').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = 'https://discord.gg/t5E4XyC4h9';
+        });
+    </script>
 </body>
 </html>
